@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'org.jetbrains.kotlin.android.extensions'
+    id "scabbard.gradle" version "0.2.0"
 }
 
 android {
@@ -35,6 +36,9 @@ android {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 
+    scabbard {
+        enabled true
+    }
 }
 
 dependencies {
